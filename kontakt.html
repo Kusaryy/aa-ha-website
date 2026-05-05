@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Kontakt – AA-HA Group</title>
+<meta name="description" content="Sprechen Sie mit uns. Telefon, E-Mail, Adresse in Hamburg-Stellingen. Kostenfreie Basisanalyse Ihres Netzwerks." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231B3A6F'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-family='Inter,system-ui' font-size='44' font-weight='700' fill='white' letter-spacing='-2'%3EA%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://rsms.me/" />
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+<link rel="stylesheet" href="assets/style.css" />
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('aa-ha-theme');
+      var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (t === 'dark' || (!t && d)) document.documentElement.setAttribute('data-theme', 'dark');
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <a href="index.html" class="brand"><span class="brand-mark">A</span><span>AA-HA Group</span></a>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="leistungen.html" data-nav>Leistungen</a>
+      <a href="ueber-uns.html" data-nav>Über uns</a>
+      <a href="kontakt.html" data-nav>Kontakt</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Erscheinungsbild umschalten">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <a href="kontakt.html" class="btn btn--primary">Basisanalyse anfordern</a>
+      <button class="menu-toggle" data-menu-open aria-label="Menü öffnen">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" data-mobile-menu>
+  <div class="mobile-menu-header">
+    <a href="index.html" class="brand"><span class="brand-mark">A</span><span>AA-HA Group</span></a>
+    <button class="theme-toggle" data-menu-close aria-label="Menü schließen">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav>
+    <a href="leistungen.html">Leistungen</a>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+  <a href="kontakt.html" class="btn btn--primary">Basisanalyse anfordern</a>
+</div>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow" data-reveal>Kontakt</p>
+    <h1 data-reveal data-reveal-delay="1">Lassen Sie uns kurz sprechen.</h1>
+    <p class="lead" data-reveal data-reveal-delay="2">Eine erste Einschätzung dauert selten länger als ein Telefonat. Rufen Sie an, schreiben Sie eine kurze Nachricht oder nutzen Sie das Formular – Sie hören innerhalb eines Werktages von uns.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-info" data-reveal>
+        <dl>
+          <div>
+            <dt>Telefon</dt>
+            <dd><a href="tel:+494060060200">040 600 602 0</a></dd>
+            <p class="small">Mo – Fr · 8 – 18 Uhr</p>
+          </div>
+          <div>
+            <dt>E-Mail</dt>
+            <dd><a href="mailto:moin@aa-ha.de">moin@aa-ha.de</a></dd>
+            <p class="small">Antwort innerhalb eines Werktages</p>
+          </div>
+          <div>
+            <dt>Adresse</dt>
+            <dd>Steinway Haus 7<br/>Rondenbarg 15<br/>22525 Hamburg</dd>
+            <p class="small">Hamburg-Stellingen, Nähe A7</p>
+          </div>
+          <div>
+            <dt>Was wir mitbringen</dt>
+            <dd style="font-size: 16px; font-weight: 400; color: var(--text-muted); max-width: 38ch;">Eine kostenfreie Basisanalyse Ihres Netzwerks. 60 Minuten Gespräch, ehrliche Einschätzung, schriftliche Zusammenfassung.</dd>
+          </div>
+        </dl>
+      </div>
+
+      <form class="contact-form" data-contact-form data-reveal data-reveal-delay="1">
+        <div class="field">
+          <label for="company">Unternehmen</label>
+          <input type="text" id="company" name="company" required autocomplete="organization" />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" required autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="topic">Worum geht es?</label>
+          <select id="topic" name="topic">
+            <option>Basisanalyse Netzwerk</option>
+            <option>IT-Service &amp; Support</option>
+            <option>Netzwerk &amp; Infrastruktur</option>
+            <option>Cloud &amp; Hosting</option>
+            <option>Beratung &amp; Strategie</option>
+            <option>Sonstiges</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Kurze Nachricht</label>
+          <textarea id="message" name="message" rows="4" placeholder="Was sollten wir vorab wissen?"></textarea>
+        </div>
+        <div class="form-footer">
+          <small>Mit dem Absenden stimmen Sie zu, dass wir Ihre Angaben zur Bearbeitung Ihrer Anfrage verwenden. Details in der <a href="datenschutz.html" style="text-decoration: underline;">Datenschutzerklärung</a>.</small>
+          <button type="submit" class="btn btn--primary">Anfrage senden <span class="arrow" aria-hidden="true">→</span></button>
+        </div>
+        <div class="form-success">Vielen Dank. Wir melden uns innerhalb eines Werktages.</div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark">A</span><span>AA-HA Group</span></a>
+        <p>IT-Partner für den Hamburger Mittelstand. Seit 1993.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="leistungen.html#service-1">IT-Service &amp; Support</a></li>
+          <li><a href="leistungen.html#service-2">Netzwerk &amp; Infrastruktur</a></li>
+          <li><a href="leistungen.html#service-3">Cloud &amp; Hosting</a></li>
+          <li><a href="leistungen.html#service-4">Beratung &amp; Strategie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <p>Steinway Haus 7<br/>Rondenbarg 15<br/>22525 Hamburg</p>
+        <p><a href="tel:+494060060200">040 600 602 0</a><br/><a href="mailto:moin@aa-ha.de">moin@aa-ha.de</a></p>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>© <span data-year>2026</span> AA-HA Group KG · Hamburg</span>
+      <div class="footer-legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
