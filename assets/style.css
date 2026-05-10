@@ -1458,6 +1458,62 @@ h3.card-title {
 }
 .mobile-menu .btn--primary { margin-top: 32px; align-self: flex-start; }
 
+/* ---------- Mobile Sticky CTA Bar ---------- */
+.mobile-cta-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  display: none;
+  align-items: center;
+  gap: 10px;
+  padding: 10px var(--gutter);
+  padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  -webkit-backdrop-filter: saturate(180%) blur(16px);
+  backdrop-filter: saturate(180%) blur(16px);
+  border-top: 1px solid var(--border);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+.mobile-cta-bar.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .mobile-cta-bar { display: flex; }
+}
+.mobile-cta-tel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  flex: 1;
+  transition: color var(--dur-fast) var(--ease);
+}
+.mobile-cta-tel:hover { color: var(--accent); }
+.mobile-cta-btn {
+  flex-shrink: 0;
+  font-size: 14px;
+  padding: 11px 18px;
+}
+.mobile-menu-tel {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-top: 16px;
+  transition: color var(--dur-fast) var(--ease);
+}
+.mobile-menu-tel:hover { color: var(--accent); }
+
 /* ---------- Utilities ---------- */
 .section--no-top { padding-top: 0; }
 .container--narrow { max-width: 820px; }

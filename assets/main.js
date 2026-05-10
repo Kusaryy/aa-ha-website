@@ -95,6 +95,21 @@
     if (href === path || (path === '' && href === 'index.html')) a.classList.add('is-active');
   });
 
+  // ---------- Mobile sticky CTA bar ----------
+  const mobileCta = document.querySelector('[data-mobile-cta]');
+  if (mobileCta) {
+    let shown = false;
+    const showCta = () => {
+      if (!shown && window.scrollY > 80) {
+        mobileCta.classList.add('is-visible');
+        mobileCta.setAttribute('aria-hidden', 'false');
+        shown = true;
+      }
+    };
+    window.addEventListener('scroll', showCta, { passive: true });
+    showCta();
+  }
+
   // ---------- FAQ accordion ----------
   document.querySelectorAll('[data-faq]').forEach((btn) => {
     btn.addEventListener('click', () => {
