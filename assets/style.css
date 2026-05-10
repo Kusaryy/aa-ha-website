@@ -512,22 +512,26 @@ h3.card-title {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 0;
-  color: var(--text-subtle);
+  gap: clamp(20px, 4vw, 52px);
 }
-.trust-list span {
-  font-size: clamp(12px, 1.1vw, 14px);
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  opacity: 0.45;
-  padding: 6px clamp(16px, 2.5vw, 36px);
-  transition: opacity var(--dur) var(--ease), color var(--dur) var(--ease);
+.trust-logo {
+  height: 22px;
+  width: auto;
+  max-width: 110px;
+  object-fit: contain;
+  display: block;
+  filter: grayscale(1) opacity(0.32);
+  transition: filter var(--dur) var(--ease);
 }
-.trust-list span + span {
-  border-left: 1px solid var(--border);
+.trust-logo:hover {
+  filter: grayscale(0) opacity(1);
 }
-.trust-list span:hover { opacity: 1; color: var(--text); }
+[data-theme="dark"] .trust-logo {
+  filter: invert(1) grayscale(1) opacity(0.42);
+}
+[data-theme="dark"] .trust-logo:hover {
+  filter: invert(1) grayscale(0) opacity(1);
+}
 
 /* ---------- Section header ---------- */
 .section-header {
