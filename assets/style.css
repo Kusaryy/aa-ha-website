@@ -17,6 +17,9 @@
   --accent-hover: #142A50;
   --accent-soft: rgba(27, 58, 111, 0.08);
   --success: #2F7D5B;
+  --amber:       #B8860B;
+  --amber-soft:  rgba(184, 134, 11, 0.08);
+  --section-hero: clamp(80px, 10vw, 140px);
 
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -116,10 +119,17 @@ h3, h4, h5 { letter-spacing: -0.01em; }
 }
 .eyebrow::before {
   content: '';
-  width: 24px;
-  height: 1px;
-  background: currentColor;
-  opacity: 0.5;
+  width: 28px;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    var(--accent) 0, var(--accent) 3px,
+    transparent 3px, transparent 7px,
+    currentColor 7px
+  );
+  opacity: 0.55;
+  border-radius: 1px;
+  flex-shrink: 0;
 }
 
 h1.display {
