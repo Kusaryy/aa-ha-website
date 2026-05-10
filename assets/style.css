@@ -1176,6 +1176,135 @@ h3.card-title {
 .team-info h3 { font-size: 24px; margin-bottom: 12px; }
 .team-info p { color: var(--text-muted); max-width: 56ch; }
 
+/* ---------- Über-uns Timeline ---------- */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-block: clamp(32px, 4vw, 48px);
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 56px;
+  top: 12px;
+  bottom: 12px;
+  width: 1px;
+  background: var(--border);
+}
+@media (max-width: 600px) {
+  .timeline::before { left: 36px; }
+}
+.timeline-item {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 24px;
+  align-items: start;
+  padding-block: 20px;
+}
+@media (max-width: 600px) {
+  .timeline-item { grid-template-columns: 72px 1fr; gap: 16px; }
+}
+.timeline-item + .timeline-item { border-top: 1px solid var(--border); }
+.timeline-year {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  padding-top: 3px;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+.timeline-year::after {
+  content: '';
+  position: absolute;
+  right: -32px;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+@media (max-width: 600px) {
+  .timeline-year::after { right: -22px; }
+}
+.timeline-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+.timeline-content p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 52ch;
+}
+
+/* ---------- Standort-Card ---------- */
+.standort-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(24px, 3vw, 40px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: clamp(24px, 3vw, 36px);
+  margin-top: 16px;
+}
+@media (min-width: 700px) {
+  .standort-card { grid-template-columns: 1fr 1.8fr; }
+}
+.standort-label {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.standort-name {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+.standort-detail {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+.standort-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.standort-fact {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 12px;
+  padding-block: 12px;
+  border-bottom: 1px solid var(--border);
+  align-items: baseline;
+}
+.standort-fact:first-child { padding-top: 0; }
+.standort-fact:last-child { border-bottom: 0; padding-bottom: 0; }
+.standort-fact-label {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.standort-fact-value {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+}
+
 /* ---------- Kontakt page ---------- */
 .contact-grid {
   display: grid;
