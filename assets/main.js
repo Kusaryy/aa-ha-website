@@ -95,6 +95,23 @@
     if (href === path || (path === '' && href === 'index.html')) a.classList.add('is-active');
   });
 
+  // ---------- FAQ accordion ----------
+  document.querySelectorAll('[data-faq]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('[data-faq]').forEach((b) => {
+        b.setAttribute('aria-expanded', 'false');
+        const ans = b.nextElementSibling;
+        if (ans) ans.classList.remove('is-open');
+      });
+      if (!isOpen) {
+        btn.setAttribute('aria-expanded', 'true');
+        const ans = btn.nextElementSibling;
+        if (ans) ans.classList.add('is-open');
+      }
+    });
+  });
+
   // ---------- Footer year ----------
   const yearEl = document.querySelector('[data-year]');
   if (yearEl) yearEl.textContent = new Date().getFullYear();

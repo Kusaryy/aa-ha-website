@@ -71,13 +71,53 @@
 
 <!-- ============== HERO ============== -->
 <section class="hero">
+  <div class="hero-rings" aria-hidden="true"></div>
   <div class="container">
-    <p class="eyebrow hero-eyebrow" data-reveal>IT-Partner seit 1993</p>
-    <h1 class="display" data-reveal data-reveal-delay="1">Komplexe IT,<br/>ruhig betrieben.</h1>
-    <p class="lead" data-reveal data-reveal-delay="2">Seit über drei Jahrzehnten betreuen wir kleine und mittelständische Unternehmen im Großraum Hamburg – von der Server-Infrastruktur bis zum Tagesgeschäft. Persönlich, präzise, langfristig.</p>
-    <div class="hero-actions" data-reveal data-reveal-delay="3">
-      <a href="kontakt.html" class="btn btn--primary">Basisanalyse anfordern <span class="arrow" aria-hidden="true">→</span></a>
-      <a href="leistungen.html" class="btn btn--ghost">Leistungen ansehen</a>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow" data-reveal>IT-Partner seit 1993</p>
+        <h1 class="display" data-reveal data-reveal-delay="1">Komplexe IT,<br/>ruhig betrieben.</h1>
+        <p class="lead" data-reveal data-reveal-delay="2">Seit über drei Jahrzehnten betreuen wir kleine und mittelständische Unternehmen im Großraum Hamburg – von der Server-Infrastruktur bis zum Tagesgeschäft. Persönlich, präzise, langfristig.</p>
+        <div class="hero-actions" data-reveal data-reveal-delay="3">
+          <a href="kontakt.html" class="btn btn--primary">Basisanalyse anfordern <span class="arrow" aria-hidden="true">→</span></a>
+          <a href="leistungen.html" class="btn btn--ghost">Leistungen ansehen</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true" data-reveal data-reveal-delay="2">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span class="hero-card-label">System-Status</span>
+            <span class="hero-status-online">
+              <span class="hero-status-dot"></span>
+              Alle Systeme aktiv
+            </span>
+          </div>
+          <div class="hero-card-row">
+            <span class="hero-card-key">Server Hamburg</span>
+            <span class="hero-card-val hero-card-val--ok">Online</span>
+          </div>
+          <div class="hero-card-row">
+            <span class="hero-card-key">Support</span>
+            <span class="hero-card-val">Mo – Fr · 8–18 Uhr</span>
+          </div>
+          <div class="hero-card-row">
+            <span class="hero-card-key">Reaktionszeit</span>
+            <span class="hero-card-val">≤ 1 Werktag</span>
+          </div>
+          <div class="hero-card-row">
+            <span class="hero-card-key">Ansprechpartner</span>
+            <span class="hero-card-val">Persönlich, fest</span>
+          </div>
+          <div class="hero-card-row">
+            <span class="hero-card-key">Standort</span>
+            <span class="hero-card-val">Hamburg-Stellingen</span>
+          </div>
+          <div class="hero-card-footer">
+            <span class="hero-card-footer-text">IT-Partner für Hamburg · Seit 1993</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <dl class="hero-meta" data-reveal data-reveal-delay="4">
@@ -172,7 +212,7 @@
 </section>
 
 <!-- ============== APPROACH ============== -->
-<section class="section section--tight" id="vorgehen" style="padding-top: 0;">
+<section class="section section--tight section--no-top" id="vorgehen">
   <div class="container">
     <div class="section-header">
       <p class="eyebrow" data-reveal>Vorgehen</p>
@@ -199,7 +239,7 @@
 </section>
 
 <!-- ============== NUMBERS ============== -->
-<section class="section section--tight" style="padding-top: 0;">
+<section class="section section--tight section--no-top">
   <div class="container">
     <dl class="numbers" data-reveal>
       <div class="number">
@@ -235,11 +275,12 @@
           <p>„Gute IT erkennen Sie daran, dass niemand mehr über sie spricht."</p>
           <cite>— Branko Bersa, Geschäftsführer</cite>
         </div>
-        <div style="margin-top: 32px;">
+        <div class="about-link-row">
           <a href="ueber-uns.html" class="btn btn--text">Mehr über uns <span class="arrow" aria-hidden="true">→</span></a>
         </div>
       </div>
       <div class="about-visual" data-reveal data-reveal-delay="1" aria-hidden="true">
+        <div class="about-visual-year">1993</div>
         <div class="about-visual-inner">
           <span class="label">Hauptsitz</span>
           <span class="value">Steinway Haus 7, Hamburg</span>
@@ -250,7 +291,7 @@
 </section>
 
 <!-- ============== INDUSTRIES ============== -->
-<section class="section section--tight" style="padding-top: 0;">
+<section class="section section--tight section--no-top">
   <div class="container">
     <div class="section-header">
       <p class="eyebrow" data-reveal>Branchen</p>
@@ -273,11 +314,68 @@
   </div>
 </section>
 
+<!-- ============== FAQ ============== -->
+<section class="section section--no-top" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow" data-reveal>Häufige Fragen</p>
+      <h2 class="section-title" data-reveal data-reveal-delay="1">Was Sie wahrscheinlich<br/>fragen wollen.</h2>
+    </div>
+    <div class="faq-list" data-reveal>
+      <div class="faq-item">
+        <button class="faq-question" data-faq aria-expanded="false">
+          Was kostet eine Basisanalyse?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner"><p>Die Basisanalyse Ihres Netzwerks ist vollständig kostenfrei und unverbindlich. Wir kommen zu Ihnen, schauen uns an, was Sie haben, und geben Ihnen eine schriftliche Einschätzung. Ohne Verkaufsdruck, ohne Folgepflicht.</p></div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" data-faq aria-expanded="false">
+          Wie schnell reagieren Sie bei einem Ausfall?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner"><p>Unsere definierten Reaktionszeiten liegen je nach Service-Stufe bei einer Stunde bis zum nächsten Werktag. Kritische Ausfälle priorisieren wir bevorzugt. Sie erreichen uns telefonisch werktags von 8 bis 18 Uhr – und sprechen mit einem Menschen, nicht mit einem Ticket-System.</p></div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" data-faq aria-expanded="false">
+          Betreuen Sie uns auch außerhalb Hamburgs?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner"><p>Vor-Ort-Service leisten wir in Hamburg und dem norddeutschen Raum. Remote-Support und Beratung bieten wir deutschlandweit an. Wenn Sie mehrere Standorte haben, sprechen Sie uns einfach an – wir klären das gemeinsam im Erstgespräch.</p></div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" data-faq aria-expanded="false">
+          Müssen wir bestehende IT-Verträge kündigen?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner"><p>Nein. Wir arbeiten mit dem, was Sie haben, und integrieren uns in bestehende Strukturen. Wenn ein Wechsel sinnvoll wäre, sagen wir Ihnen das – aber wir empfehlen keinen Wechsel, nur um selbst mehr zu liefern.</p></div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" data-faq aria-expanded="false">
+          Haben wir immer denselben Ansprechpartner?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner"><p>Ja. Das ist unser wichtigstes Versprechen. Sie haben einen festen Ansprechpartner, der Ihre Infrastruktur kennt, Ihre Geschichte kennt und Ihre Anforderungen kennt. Kein anonymes Helpdesk, keine zufälligen Tickets.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============== CTA ============== -->
-<section class="section" style="padding-top: 0;">
+<section class="section section--no-top">
   <div class="container">
     <div class="cta" data-reveal>
-      <p class="eyebrow" style="color: rgba(242,241,237,0.6);">Erstgespräch</p>
+      <p class="eyebrow">Erstgespräch</p>
       <h2>Lassen Sie uns kurz sprechen.</h2>
       <p>Eine Basisanalyse Ihres Netzwerks – kostenfrei, unverbindlich, in 60 Minuten. Wir hören zu, sehen uns an, was Sie haben, und sagen Ihnen, was sinnvoll ist.</p>
       <div class="cta-actions">
