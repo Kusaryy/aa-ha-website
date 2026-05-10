@@ -17,9 +17,8 @@
   --accent-hover: #142A50;
   --accent-soft: rgba(27, 58, 111, 0.08);
   --success: #2F7D5B;
-  --amber:       #B8860B;
-  --amber-soft:  rgba(184, 134, 11, 0.08);
-  --section-hero: clamp(80px, 10vw, 140px);
+  --amber: #B8860B;
+  --amber-soft: rgba(184, 134, 11, 0.08);
 
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -33,6 +32,7 @@
   --max-w: 1200px;
   --gutter: clamp(20px, 4vw, 48px);
   --section-y: clamp(96px, 12vw, 160px);
+  --section-hero: clamp(80px, 10vw, 140px);
 
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
   --dur-fast: 160ms;
@@ -123,7 +123,7 @@ h3, h4, h5 { letter-spacing: -0.01em; }
   height: 2px;
   background: linear-gradient(
     to right,
-    var(--accent) 0, var(--accent) 3px,
+    var(--accent) 0px, var(--accent) 3px,
     transparent 3px, transparent 7px,
     currentColor 7px
   );
